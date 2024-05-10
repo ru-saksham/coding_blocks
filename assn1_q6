@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        int nst=n-1;
+        int nst1=1;
+        int a=1;
+
+        int i=1;
+        while(i<=2*n-1){
+            int b=a;
+
+        int j =1;
+        while(j<=nst){
+            System.out.print("  ");
+            j++;
+        }
+        int k =1;
+        while(k<=nst1){
+            System.out.print(b+" ");
+            if(k<=nst1/2){
+                b++;
+            }
+            else {
+                b--;
+            }
+            k++;
+        }
+        if (i<n){
+            nst--;
+            nst1=nst1+2;
+            a++;
+        }
+        else
+        {
+            nst++;
+            nst1=nst1-2;
+            a--;
+        }
+
+        i++;
+        System.out.println();}
+    }
+}
