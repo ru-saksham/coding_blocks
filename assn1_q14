@@ -1,0 +1,87 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        int nst1 = 1;
+        int nst2 = 2 * n - 1;
+
+        int i = 1;
+        while (i <= n) {
+            int a = n;
+            int j = 1;
+            while (j <= nst1) {
+                System.out.print(a + " ");
+                a--;
+                j++;
+            }
+            int k = 1;
+            while (k <= nst2) {
+                System.out.print("  ");
+
+                k++;
+
+            }
+            int g = n - i + 1;
+            int l = 1;
+            while (l <= nst1) {
+                System.out.print(g + " ");
+                g++;
+                l++;
+            }
+            nst1++;
+            nst2 = nst2 - 2;
+            i++;
+            System.out.println();
+        }
+        int z = n;
+        int m = 1;
+        while (m <= 2 * n + 1) {
+            System.out.print(z + " ");
+            if (m <= n) {
+                z--;
+
+            } else {
+                z++;
+            }
+            m++;
+
+        }
+        System.out.println();
+        int nst3 = n;
+        int nst4 = 1;
+        int k = 1;
+        while (k <= n) {
+            int a = n;
+            int j = 1;
+            while (j <= nst3) {
+                System.out.print(a + " ");
+                a--;
+                j++;
+            }
+            int l = 1;
+            while (l <= nst4) {
+                System.out.print("  ");
+                l++;
+            }
+            int d = k;
+            int c = 1;
+            while (c <= nst3) {
+
+                System.out.print(d + " ");
+                d++;
+                c++;
+
+            }nst3--;
+            nst4=nst4+2;
+            k++;
+            System.out.println();
+
+        }
+
+    }
+
+
+}
